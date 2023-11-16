@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #01022d, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: linear-gradient(to right, #a2dbc415, #b897db15), url(pic/5.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0px;
+}
+
+.container:hover {
+    background-image: linear-gradient(transparent, transparent), url(pic/5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: #d8b4fe;
+    text-shadow: 0 0 15px #d8b4fe;
+
+}
+
+
+ul {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul a:hover {
+    color: #d8b4fe;
+    text-shadow: 0 0 15px #d8b4fe;
+}
+
+ul a {
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+ul a:after {
+    content: "";
+    position: absolute;
+    background-color: #f5d0fe;
+    left: 0;
+    height: 1px;
+    width: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+ul a:hover:after {
+    width: 100%;
+}
+
+ul a::before {
+    content: "";
+    position: absolute;
+    background-color: #f5d0fe;
+    right: 0;
+    height: 1px;
+    width: 0;
+    top: -3px;
+    transition: width 0.3s ease-in-out;
+}
+
+ul a:hover::before {
+    width: 100%;
+}
+
+.conatnt {
+    color: white;
+    width: 50%;
+    margin-top: 150px;
+    padding: 30px;
+}
+.conatnt h2{
+    font-size: 46px;
+
+}

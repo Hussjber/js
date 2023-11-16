@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/minecraft-great-cave-walls-forest-hd-mm9b3bqe6qc6s96f.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    height: 80vh;
+    width: 100vmin;
+    border-radius: 20px;
+    /* background-color: aqua; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 35px);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(27, 27, 27);
+    border: 0.1px solid #ccc;
+    cursor: pointer;
+}
+
+.tools {
+    display: flex;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+    border: 1 solid;
+    margin-left: 35px;
+}
+
+.inventory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.inventory-square {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    border: solid 0.5px;
+    padding: 20px;
+}
+
+.counter {
+    text-align: center;
+    margin: 10em;
+
+}
+
+.counter>span {
+    margin: 5em;
+    color: #1f1f1f;
+
+}
+
+
+
+#part2 {
+    display: flex;
+    background-color: #5c5b5b;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+#resetButton {
+    width: 60px;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 12px;
+    background-color: rgb(32, 218, 26);
+    color: aliceblue;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    color: black;
+}
+
+#axe {
+    background-image: url('assets/axe.png');
+
+}
+#pickaxe {
+    background-image: url('assets/pickaxe.png');
+}
+
+#shovel {
+    background-image: url('assets/shovel.png');
+}
+
+#rock {
+    background-image: url('assets/rock.png');
+}
+
+#leaf {
+    background-image: url('assets/leaf.png');
+}
+#wood {
+    background-image: url('assets/wood.png');
+}
+
+#soil {
+    background-image: url('assets/soil.jpg');
+}
+#grass {
+    background-image: url('assets/grass.png');
+}

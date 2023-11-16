@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    const myCountry = {
+      country: "egypt",
+      capital: "cairo",
+      language: "arabic",
+      papulation: "109.3 million",
+      neighbours: ["Libya", "sudan", "palestine"],
+      describe() {
+        console.log(
+          `${this.country} has 6 million people,thir mother tongueis ${this.language}they have ${this.neighbours} and a capital called ${this.capital}`
+        );
+      },
+      checkIsland() {
+        console.log(this.neighbours.length > 0 ? false : true);
+      },
+    };
+
+    myCountry.describe();
+    myCountry.checkIsland();
+  </script>
+
+  <body></body>
+</html>

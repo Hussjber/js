@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    // 1
+    const numbers = [1, 2, 3, 4, 5, 6];
+    doubleValuse = numbers.map((num) => {
+      return num * 2;
+    });
+
+    // // 2
+    onlyEvenValues = numbers.map((num) => {
+      if (num % 2 === 0) {
+        return num;
+      }
+    });
+    // 3
+    const firstLast = [];
+    numbers.forEach((num, index) => {
+      if (index === 0 || index === numbers.length - 1) {
+        firstLast.push(num.toString());
+      }
+    });
+    // // 4
+    function vowelCount(str) {
+      const counter = {};
+      str = str.toLowerCase();
+      str = [...str];
+      str.forEach((char) => {
+        if (
+          char === "o" ||
+          char === "e" ||
+          char === "u" ||
+          char === "i" ||
+          char === "a"
+        ) {
+          if (counter[char] === undefined) {
+            counter[char] = 1;
+          } else {
+            counter[char]++;
+          }
+        }
+      });
+      return counter;
+    }
+    const vw = vowelCount(
+      "hello my name is hussein  and my age is 24 studying web development having fun with simon and adam in zoom at 15:40 "
+    );
+    // 5
+    const text = "can you say hay";
+    const capitalizedText = capitalize(text);
+    function capitalize(str) {
+      capitalizedChars = str.split("").map((char) => char.toUpperCase());
+      capitalizedString = capitalizedChars.join("");
+      return capitalizedString;
+    }
+    console.log("doubleValuse", doubleValuse);
+    console.log("onlyEvenValues", onlyEvenValues);
+    console.log("firstLast", firstLast);
+    console.log("vowelCount", vw);
+    console.log("capitalizedText", capitalizedText);
+  </script>
+  <body></body>
+</html>
