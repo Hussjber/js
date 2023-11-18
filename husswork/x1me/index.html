@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="try.js" defer></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="page1.css">
+    <script src="page1.js" defer></script>
 </head>
 
 <body>
@@ -14,22 +14,14 @@
         <div class="container">
             <h2>login</h2>
             <div class="input-box">
-                <input type="text" id="Admin" placeholder="Admin">
+                <input type="text" id="username" placeholder="Username">
             </div>
             <div class="input-box">
-                <input type="password" placeholder="password" Password" required>
+                <input type="password" placeholder="Password" id="password" required>
             </div>
-            <div class="remember-forget">
-                <label><input type="checkbox"> Remember me </label>
-            </div>
-            <button class="btn" type="submit">login</button>
-
+            <button class="btn" id="login" type="submit" value="login">Login</button>
         </div>
     </form>
-
-
-
-
 </body>
 
 </html>
