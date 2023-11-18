@@ -1,24 +1,24 @@
-array:-[]; we use array in order يعني لمن يكون اشي لازم على الترتيب
-*//
-we use <splice> to remove,add or want spacific postion of any index from the array
-we use 
 
-let numSiblings = prompt("How many siblings do you have?");
+push - add to end
 
-numSiblings = parseInt(numSiblings);
+pop - remove from the end
 
-if(numSiblings === 1){
-  console.log(numSiblings + " sibling");
-} else if (numSiblings > 1){
-  console.log(numSiblings +" siblings");
-} else {
-  console.log("No siblings");
-}
+shift - remove from the start
 
-/* 
-We should use === because it makes sure that the type of the variable is the same
-"1" is a string
-while 1 is a number
-eventhough "1" == 1 is true, they don't really have the same type and it could get confusing later on
-so it's better to use === and check everything correctly with their types
-*/
+unshift - add to start
+
+concat - merge arrays
+
+inncludes -look for a value
+
+indexOf - just like str.indexOf
+
+join - creates a string from array
+
+slice - copy portion of an arr
+
+splice - remove/replace elemnts
+
+sort - sorts an arry
+
+
